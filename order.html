@@ -1,0 +1,120 @@
+<!--Author: Nathiélle Nascimento-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Finnegan’s - Order</title>
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+  <h1>Finnegan’s</h1>
+  <!-- Pictures from https://unsplash.com-->
+  <img src="burguer.jpg" alt="Burguer">
+  <div class="order">
+    <form id="orderform" onsubmit="return false;">
+      <fieldset>
+        <legend>Order</legend>
+
+        <div id="flip">
+          Classic Burguer
+        </div>
+
+        <div id="panel">
+          <table>
+            <tr>
+              <td>Size
+                <select id="burguer-size" name='burguer-size' onchange="calculateTotal(); alerted();">
+                  <option value="None">Select Size</option>
+                  <option value="6oz Large">6oz Large (&euro;7.00)</option>
+                  <option value="10oz Extra-Large">10oz Extra-Large(&euro;9.00)</option>
+                  <option value="16oz Supersize">16oz Supersize(€17.50)</option>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Quantity
+                <button id=btn-number onclick=" decrement(); calculateTotal();">-</button>
+                <input id=demoInput type=number min=0 max=50 value=0>
+                <button onclick="increment(); calculateTotal();">+</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+    </form>
+
+    <form id="orderform1" onsubmit="return false;">
+      <div id="flip2">
+        Cheese Burguer
+      </div>
+
+      <div id="panel2">
+        <table>
+          <tr>
+            <td>Size
+              <select id="burguer-size" name='burguer-size' onchange="calculateTotal(); alerted();">
+                <option value="None">Select Size</option>
+                <option value="6oz Large">6oz Large (&euro;7.00)</option>
+                <option value="10oz Extra-Large">10oz Extra-Large(&euro;9.00)</option>
+                <option value="16oz Supersize">16oz Supersize(€17.50)</option>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Quantity
+              <button id=btn-number onclick=" decrement2(); calculateTotal();">-</button>
+              <input id=demoInput2 type=number min=0 max=50 value=0>
+              <button onclick="increment2(); calculateTotal();">+</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+
+    <form id="orderform2" onsubmit="return false;">
+      <div id="flip3">
+        Bacon Burguer
+      </div>
+
+      <div id="panel3">
+        <table>
+          <tr>
+            <td>Size
+              <select id="burguer-size" name='burguer-size' onchange="calculateTotal(); alerted();">
+                <option value="None">Select Size</option>
+                <option value="6oz Large">6oz Large (&euro;7.00)</option>
+                <option value="10oz Extra-Large">10oz Extra-Large(&euro;9.00)</option>
+                <option value="16oz Supersize">16oz Supersize(&euro;17.50)</option>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Quantity
+              <button id=btn-number onclick=" decrement3(); calculateTotal();">-</button>
+              <input id=demoInput3 type=number min=0 max=50 value=0>
+              <button onclick="increment3(); calculateTotal();">+</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      Discount
+      <input type="text" id="discount" name='discount' />
+      <button type="submit" id="apply-byn" onclick="calculateTotal()">Apply</button>
+      <p id="totalPrice">Total € 0.0</p>
+      <input type="submit" id="submit-button" value="Submit" />
+
+      </fieldset>
+    </form>
+
+  </div>
+
+
+
+</body>
+
+</html>

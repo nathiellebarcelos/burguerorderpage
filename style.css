@@ -1,0 +1,182 @@
+/* Applying styling for all body, img, p, button, legend and div in the HTML*/
+body {
+  width: 100%;
+  margin: 0 0 0 0; /*removes margin and padding*/
+  font-family: "soleil", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  padding: 1px;
+  background-color: #eb4d2c;
+  color: #fff;
+}
+
+button {
+  outline: none;
+}
+
+legend {
+  font-family: Luminari, fantasy;
+  font-size: 20px;
+  text-align: center;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+h1 {
+  width: 25%;
+  padding: 10px;
+  position: absolute; /*postion item over another item*/
+  left: 43%; /*specify position on the page*/
+  color: #fff;
+  font-family: Luminari, fantasy;
+}
+/*----------------------------------------------------------------*/
+.login {
+  width: 30%;
+  padding: 20px;
+  position: absolute; /*postion item over another item*/
+  left: 35%; /*specify position on the page*/
+  top: 15%;
+  background-color: #fff;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 110px 8px 0px;
+  font-size: 15px;
+  border: 1px solid;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background: #eb4d2c;
+  color: #fff;
+}
+
+.order {
+  width: 25%;
+  padding: 20px;
+  position: absolute; /*postion item over another item*/
+  left: 35%; /*specify position on the page*/
+  top: 15%;
+  background-color: #fff;
+}
+.order button {
+  border-style: none;
+  padding: 0px;
+  background-color: #fff;
+  font-size: 20px;
+  color: #eb4d2c;
+}
+
+/*----------------------------------------------------------------*/
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+/*----------------------------------------------------------------*/
+#login-txt {
+  margin: 0px 60px;
+}
+
+#btn-number {
+  margin-left: 20px;
+}
+
+#demoInput,
+#demoInput2,
+#demoInput3 {
+  border-style: none;
+  width: 15%;
+  font-size: 20px;
+  text-align: center;
+  outline-style: none;
+  outline: 0;
+}
+
+#burguer-size {
+  margin: 8px 0px 8px 10px;
+  font-size: 15px;
+  border: 1px solid;
+  color: #eb4d2c;
+}
+
+#totalPrice {
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+#submit-button {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #eb4d2c;
+  color: #fff;
+}
+
+#panel,
+#panel2,
+#panel3,
+#flip,
+#flip2,
+#flip3 {
+  text-align: center;
+  border: solid 1px #eb4d2c;
+}
+
+#panel,
+#panel2,
+#panel3 {
+  display: none;
+}
+
+#flip,
+#flip2,
+#flip3 {
+  background-color: #eb4d2c;
+  color: #fff;
+  font-family: Luminari, fantasy;
+}
+
+#discount {
+  margin: 8px 0px 8px 10px;
+  font-size: 15px;
+  border: 1px solid;
+  color: #eb4d2c;
+}
+
+#apply-byn {
+  font-size: 15px;
+  padding: 5px;
+  background-color: #eb4d2c;
+  color: #fff;
+}
+
+/*----------------------------------------------------------------*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

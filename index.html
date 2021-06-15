@@ -1,0 +1,49 @@
+<!--Author: Nathiélle Nascimento-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Finnegan’s - Login</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+  <h1>Finnegan’s</h1>
+  <img src="burguer.jpg" alt="Burguer">
+
+  <div class="login">
+
+    <form name=form1 id="login-txt">
+      <table>
+
+        <tr>
+          <td>Username</td>
+        </tr>
+
+        <tr>
+          <td><input type="text" name="text1" placeholder="Enter Username" required></td>
+        </tr>
+
+        <tr>
+          <td>Password (9 characters)</td>
+        </tr>
+
+        <tr>
+          <td><input id='restrict' type="password" placeholder="Enter Password" name="psw" required /></td>
+        </tr>
+
+        <tr>
+          <td><button id="login-btn" type='button'
+              onclick="lengthRestriction(document.getElementById('restrict'), 9, 9); required();">Login</button></td>
+        </tr>
+
+      </table>
+    </form>
+  </div>
+
+</body>
+
+</html>
